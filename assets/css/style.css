@@ -1,14 +1,18 @@
 :root {
-    --orange:
-    --grey: rgb(230,231,232)
-    --purple: rgb(109,2,199)
+
+    --orange: #ff5e18;
+    --white: #e6e7e8;
+    --purple: #6d02c7;
+    --black: #1d1d21;
+    --grey: #414042;
+
 }
 
 
 @font-face {
     font-family: 'pp_supply_sansregular';
     src: url(file:///C:/Users/emona/Desktop/html-css-project/assets/css/fonts/ppsupplysans-regular-webfont.woff) format('woff2'),
-         url(file:///C:/Users/emona/Desktop/html-css-project/assets/css/fonts/ppsupplysans-regular-webfont.woff) format('woff');
+        url(file:///C:/Users/emona/Desktop/html-css-project/assets/css/fonts/ppsupplysans-regular-webfont.woff) format('woff');
     font-weight: normal;
     font-style: normal;
 
@@ -16,34 +20,411 @@
 
 /* assets/css/fonts/ppsupplysans-regular-webfont.woff */
 
-
 * {
     padding: 0px;
     margin: 0px;
     box-sizing: border-box;
     font-family: 'pp_supply_sansregular';
     text-transform: uppercase;
+    letter-spacing: 4px;
 
+    div.
+    /* header */
 }
- header {
+
+header {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: center;
     align-items: center;
+    align-content: center;
     position: fixed;
     width: 100%;
     height: 75px;
-    top: 0;
-    left: 0;
-    background: #fff;
     padding: 30px;
-    padding-left: 100px;
-    padding-right: 100px;
-    transition: all .3s ease-in-out
- }
+    transition: all .3s ease-in-out;
+    background-color: white;
+}
+
+header a {
+    text-decoration: none;
+    color: #1d1d21;
+    padding: 20px;
+    letter-spacing: 1px;
+}
+
+header a:hover {
+    color: #ff5e18;
+}
+
+.main-poster {
+    z-index: 999999999999;
+    ;
+}
 
 .main-poster img {
     width: 100%;
+
 }
+
+
 marquee {
     background-color: var(--orange);
+    height: 70px;
+    display: inline-block;
+}
+
+marquee span {
+    position: static;
+    line-height: 70px;
+    display: inline-block;
+}
+
+div.ticket-stripe {
+    height: 70px;
+    background-color: var(--white);
+    text-align: center;
+    line-height: 70px;
+    font-size: 18px;
+}
+
+/* tirana prishtina sales */
+
+
+section.ticket-sale {
+    width: 100%;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: #414042;
+}
+
+div.shf-prishtina {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+    height: 100%;
+    border-right: 1px solid #ddd;
+    text-align: center;
+
+}
+
+div.shf-prishtina h1,
+div.shf-tirana h1 {
+    color: var(--orange);
+    font-size: 32px;
+    text-align: center;
+
+
+}
+
+div.shf-prishtina h3,
+div.shf-tirana h3 {
+    color: #414042;
+    font-size: 18px;
+    display: flex;
+    justify-content: center;
+}
+
+div.shf-tirana {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    justify-content: center;
+    width: 50%;
+    height: 100%;
+    text-align: center;
+}
+
+div.international-ticket-stripe {
+    height: 70px;
+    background-color: var(--white);
+    text-align: center;
+    line-height: 70px;
+    font-size: 18px;
+}
+
+section.festicket-stripe {
+    width: 100%;
+    height: 160px;
+    background-color: #1d1d21;
+    color: white;
+    font-size: 18px;
+    padding: 50px;
+    display: flex;
+    justify-content: space-around;
+}
+
+section.festicket-stripe img {
+    width: 240px;
+}
+
+.fst-title {
+    display: flex;
+    justify-content: space-between;
+}
+
+section.festicket-stripe h1 {
+    font-size: 18px;
+    width: 60%;
+    display: flex;
+    align-items: center;
+}
+.fst-title button{
+    width: 20%;
+}
+
+div.headliners-stripe {
+    height: 70px;
+    background-color: var(--white);
+    text-align: center;
+    line-height: 70px;
+    font-size: 18px;
+}
+
+section.artists {
+    width: 100%;
+    height: 500px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+}
+
+div.header {
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--orange);
+}
+
+button.lineup {
+    margin-top: 50px;
+}
+
+div.artists-headliners {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    background: rgb(109, 2, 199);
+    background: linear-gradient(267deg, rgba(109, 2, 199, 1) 0%, rgba(255, 94, 24, 1) 72%);
+    height: 500px;
+}
+
+.dua {
+    grid-area: 1 / 1 / 2 / 2;
+}
+
+.jb {
+    grid-area: 1 / 2 / 2 / 3;
+}
+
+.skepta {
+    grid-area: 2 / 1 / 3 / 2;
+}
+
+.diplo {
+    grid-area: 2 / 2 / 3 / 3;
+}
+
+div.artists-headliners img {
+    width: 255px;
+    padding: 10px;
+}
+
+
+div.news-stripe {
+    height: 70px;
+    background-color: var(--white);
+    text-align: center;
+    line-height: 70px;
+    font-size: 18px;
+}
+
+section.nyt-news {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    width: 100%;
+    background-color: var(--purple);
+    height: 440px;
+
+}
+
+div.duki {
+    grid-area: 1 / 1 / 2 / 2;
+}
+
+div.nyt-text {
+    grid-area: 1 / 2 / 2 / 3;
+}
+
+div.duaduki {
+    grid-area: 1 / 3 / 2 / 4;
+}
+
+div.duki img {
+    width: 660px;
+}
+
+div.nyt-text {
+    width: 303px;
+    padding: 30px;
+}
+
+div.nyt-text p {
+    line-height: 1.6;
+    margin-top: 20px;
+}
+
+div.duaduki img {
+    width: 303px;
+}
+
+
+div.partners-sponsors-stripe {
+    height: 70px;
+    background-color: var(--white);
+    text-align: center;
+    line-height: 70px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+section.partners-sponsors {
+    height: 150px;
+    background-color: var(--black);
+    display: grid;
+    grid-template-columns: repeat(11, 1fr);
+    grid-template-rows: 1fr;
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    padding: 20px;
+
+
+}
+
+section.partners-sponsors img {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 70px;
+    vertical-align:middle;
+}
+
+div.newsletter-stripe {
+    height: 70px;
+    background-color: var(--white);
+    text-align: center;
+    line-height: 70px;
+    font-size: 18px;
+}
+
+section.newsletter {
+    width: 100%;
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+form {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+
+}
+
+input.email {
+    width: 100%;
+    height: 70px;
+    font-size: 18px;
+    border: none;
+}
+
+button.subscribe {
+    width: 100%;
+    height: 70px;
+    font-size: 18px;
+    background-color: var(--purple);
+    border: none;
+}
+
+hr.orange {
+    height: 8px;
+    background-color: var(--orange);
+}
+
+footer {
+    width: 100%;
+    height: 200px;
+    background-color: var(--grey);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    color: white;
+}
+
+.main-footer {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-left {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    line-height: 30px;
+}
+
+.footer-left a {
+    text-decoration: none !important;
+    color: white;
+}
+
+.footer-left a:hover {
+    color: var(--orange);
+}
+
+.footer-right {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    font-size: 12px;
+    line-height: 30px;
+    text-align: right;
+}
+
+.footer-right h2 {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-stripe {
+    width: 100%;
+    height: 70px;
+    background-color: var(--black);
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    font-size: 12px;
+}
+
+.footer-stripe a {
+    text-decoration: none;
+    color: var(--white);
+}
+
+h3.left span {
+    margin-right: 30px;
 }

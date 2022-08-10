@@ -175,6 +175,11 @@
     .fst-title {
       
     }
+    .button{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }   
 
     section.festicket-stripe h1 {
         font-size: 18px;
@@ -596,6 +601,12 @@
     .fst-title {
       
     }
+    
+    .button{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
 
     section.festicket-stripe h1 {
         font-size: 18px;
@@ -1013,6 +1024,7 @@
         font-size: 18px;
         padding: 50px;
         display: flex;
+        flex-direction: row;
         justify-content: space-around;
     }
     
@@ -1023,6 +1035,11 @@
     .fst-title {
         display: flex;
         justify-content: space-between;
+    }
+    .button{
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
     
     section.festicket-stripe h1 {

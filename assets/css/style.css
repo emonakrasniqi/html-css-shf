@@ -29,7 +29,25 @@
     letter-spacing: 4px;
 
 
-    /* header */
+}
+
+.ticket-sale button:hover{
+    background-color: var(--orange);
+    color: white;
+    animation-direction: reverse;
+}
+
+.festicket-stripe button:hover{
+    cursor: pointer;
+}
+
+.artists button:hover{
+    background-color: var(--black);
+    color: white;
+}
+
+.newsletter button:hover{
+    cursor: pointer;
 }
 
 /* small devices max640 */
@@ -274,7 +292,7 @@
         flex-direction: column;
         width: 100%;
         background-color: var(--purple);
-        height: 800px;
+        height:fit-content;
     }
 
     .nyt-text{
@@ -312,7 +330,7 @@
     }
 
     section.partners-sponsors {
-        height: 250px;
+        height: 220px;
         padding: 20px;
         background-color: var(--black);
     }
@@ -334,11 +352,16 @@
         img.10 { grid-area: 2 / 4 / 3 / 5; }
         img.11 { grid-area: 2 / 5 / 3 / 6; }
 
-    section.partners-sponsors img {
-        width: 70px;
-        vertical-align: middle;
-    }
-
+        section.partners-sponsors img {
+            width: 70px;
+            vertical-align: middle;
+            object-fit: contain;
+        }
+        .partners-sponsors div{
+            display: flex;
+            justify-content: center;
+            align-content: center;
+        }
     
     div.newsletter-stripe {
         /* position: absolute; */
@@ -371,6 +394,7 @@
         height: 80px;
         font-size: 18px;
         border: none;
+        text-indent: 20px;
     }
 
     button.subscribe {
@@ -455,9 +479,16 @@
         text-decoration: none;
         color: var(--white);
     }
+    h3.left {
+        display: flex;
+        flex-direction: column;
+    }
 
     h3.left span {
         margin-right: 30px;
+    }
+    h3.left span.crafted {
+        margin-bottom: 20px;
     }
 }
 /* medium devices min640 */
@@ -633,9 +664,8 @@
     section.artists {
         width: 100%;
         height: 500px;
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: repeat(2, 1fr);
+        display: flex;
+        flex-direction: column;
     }
     
     div.header {
@@ -658,7 +688,7 @@
         border: 1px solid black;
         border-radius: 4px;
     }
-    div.artists-headliners {
+    /* div.artists-headliners {
         display: grid;
         grid-template-columns: repeat(5, 1fr);
         grid-template-rows: repeat(5, 1fr);
@@ -667,9 +697,9 @@
         background: rgb(109, 2, 199);
         background: linear-gradient(267deg, rgba(109, 2, 199, 1) 0%, rgba(255, 94, 24, 1) 72%);
         height: 500px;
-    }
+    } */
     
-    .dua {
+    /* .dua {
         grid-area: 1 / 1 / 2 / 2;
     }
     
@@ -684,11 +714,11 @@
     .diplo {
         grid-area: 2 / 2 / 3 / 3;
     }
-    
-    div.artists-headliners img {
+     */
+    /* div.artists-headliners img {
         width: 255px;
         padding: 10px;
-    }
+    } */
     
     
     div.news-stripe {
@@ -704,7 +734,7 @@
         flex-direction: column;
         width: 100%;
         background-color: var(--purple);
-        height: 800px;
+        height: fit-content;
     }
 
     .nyt-text{
@@ -742,7 +772,7 @@
     }
 
     section.partners-sponsors {
-        height: 250px;
+        height: 220px;
         padding: 20px;
         background-color: var(--black);
     }
@@ -767,6 +797,12 @@
     section.partners-sponsors img {
         width: 70px;
         vertical-align: middle;
+        object-fit: contain;
+    }
+    .partners-sponsors div{
+        display: flex;
+        justify-content: center;
+        align-content: center;
     }
     
     div.newsletter-stripe {
@@ -797,6 +833,7 @@
         height: 70px;
         font-size: 18px;
         border: none;
+        text-indent: 20px;
     }
     
     button.subscribe {
@@ -1067,13 +1104,14 @@
     section.artists {
         width: 100%;
         height: 500px;
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: repeat(2, 1fr);
+        display: flex;
+        flex-direction: row;
+        
     }
     
     div.header {
         height: 500px;
+        width: 100%;
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -1081,6 +1119,105 @@
         background-color: var(--orange);
     }
     
+    div.slider-container{
+        width: 100%;
+    }
+    .slider-container {
+        background: linear-gradient(
+          149deg,
+          rgb(247, 0, 255) 0%,
+          rgb(255, 145, 0) 100%
+        );
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100%;
+      }
+      
+      .slider {
+        width: 100%;
+        max-width: 600px;
+        height: 400px;
+        margin: 20px;
+        text-align: center;
+        border-radius: 20px;
+        overflow: hidden;
+        position: relative;
+      }
+      
+      .slides {
+        display: flex;
+        overflow-x: scroll;
+        position: relative;
+        scroll-behavior: smooth;
+        scroll-snap-type: x mandatory;
+      }
+      
+      .slide:nth-of-type(even) {
+        background-color: rgb(250, 246, 212);
+      }
+      
+      .slide {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-shrink: 0;
+        width: 100%;
+        height: 400px;
+        scroll-snap-align: center;
+        margin-right: 0px;
+        box-sizing: border-box;
+        background: white;
+        transform-origin: center center;
+        transform: scale(1);
+      }
+      
+      .slide__text {
+        font-size: 40px;
+        font-weight: bold;
+        font-family: sans-serif;
+      }
+      
+      .slide a {
+        background: none;
+        border: none;
+      }
+      
+      a.slide__prev,
+      .slider::before {
+        transform: rotate(135deg);
+        -webkit-transform: rotate(135deg);
+        left: 5%;
+      }
+      
+      a.slide__next,
+      .slider::after {
+        transform: rotate(-45deg);
+        -webkit-transform: rotate(-45deg);
+        right: 5%;
+      }
+      
+      .slider::before,
+      .slider::after,
+      .slide__prev,
+      .slide__next {
+        position: absolute;
+        top: 48%;
+        width: 35px;
+        height: 35px;
+        border: solid black;
+        border-width: 0 4px 4px 0;
+        padding: 3px;
+        box-sizing: border-box;
+      }
+      
+      .slider::before,
+      .slider::after {
+        content: "";
+        z-index: 1;
+        background: none;
+        pointer-events: none;
+      }
     button.lineup {
         margin-top: 50px;
     }
@@ -1092,7 +1229,7 @@
         border: 1px solid black;
         border-radius: 4px;
     }
-    div.artists-headliners {
+    /* div.artists-headliners {
         display: grid;
         grid-template-columns: repeat(5, 1fr);
         grid-template-rows: repeat(5, 1fr);
@@ -1122,7 +1259,7 @@
     div.artists-headliners img {
         width: 255px;
         padding: 10px;
-    }
+    } */
     
     
     div.news-stripe {
@@ -1136,10 +1273,9 @@
     section.nyt-news {
         display: grid;
         grid-template-columns: repeat(5, 1fr);
-        grid-template-rows: repeat(5, 1fr);
         width: 100%;
         background-color: var(--purple);
-        height: 440px;
+        height: fit-content;
     
     }
     
@@ -1186,11 +1322,9 @@
     section.partners-sponsors {
         height: 150px;
         background-color: var(--black);
-        display: grid;
-        grid-template-columns: repeat(10, 1fr);
-        grid-template-rows: 1fr;
-        grid-column-gap: 0px;
-        grid-row-gap: 0px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
         padding: 20px;
     }
     
@@ -1200,6 +1334,7 @@
         justify-content: center;
         width: 90px;
         vertical-align: middle;
+        object-fit: contain;
     }
     
     div.newsletter-stripe {
@@ -1230,6 +1365,7 @@
         height: 70px;
         font-size: 18px;
         border: none;
+        text-indent: 20px;
     }
     
     button.subscribe {
@@ -1241,9 +1377,10 @@
     }
     
     hr.orange {
-        height: 10px;
+        width: 100%;
+        height: 12px;
         background-color: var(--orange);
-        margin: -2px;
+        margin: -2px 0;
     }
     
     footer {

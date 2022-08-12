@@ -8,26 +8,28 @@
     <title>Sunny Hill Festival - Homepage</title>
     <link rel="stylesheet" href="./assets/css/style.css" />
     <link rel="icon" type="favicon" href="./favicon.png" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
 
 </head>
 
 <body>
-    
+
     <header>
         <div class="mobile-menu">
             <i class="fa-solid fa-bars"></i>
         </div>
         <nav>
-        <a href="#">Home</a>
-        <a href="#">Buy tickets</a>
-        <a href="#">Line-Up</a>
-        <a href="#">News</a>
-        <a href="#">aftermovie</a>
-        <a href="#">about us</a>
-        <a href="#">faq</a>
-        <a href="#">gallery</a>
-        <a href="#">contact</a>
+            <a href="#">Home</a>
+            <a href="#">Buy tickets</a>
+            <a href="#">Line-Up</a>
+            <a href="#">News</a>
+            <a href="#">aftermovie</a>
+            <a href="#">about us</a>
+            <a href="#">faq</a>
+            <a href="#">gallery</a>
+            <a href="#">contact</a>
         </nav>
     </header>
 
@@ -87,12 +89,39 @@
             <button class="lineup">View full lineup</button>
         </div>
 
-        <div class="artists-headliners">
+        <div class="slider-container">
+            <div class="slider">
+              <div class="slides">
+                <div id="slides__1" class="slide">
+                  <span class="slide__text"><img src="./assets/img/shfdualipa.jpg"/></span>
+                  <a class="slide__prev" href="#slides__4" title="Next"></a>
+                  <a class="slide__next" href="#slides__2" title="Next"></a>
+                </div>
+                <div id="slides__2" class="slide">
+                  <span class="slide__text"><img src="./assets/img/shfdiplo.jpg"/> </span>
+                  <a class="slide__prev" href="#slides__1" title="Prev"></a>
+                  <a class="slide__next" href="#slides__3" title="Next"></a>
+                </div>
+                <div id="slides__3" class="slide">
+                  <span class="slide__text"><img src="./assets/img/shfjbalvin.jpg"/></span>
+                  <a class="slide__prev" href="#slides__2" title="Prev"></a>
+                  <a class="slide__next" href="#slides__4" title="Next"></a>
+                </div>
+                <div id="slides__4" class="slide">
+                  <span class="slide__text"><img src="./assets/img/shfskepta.jpg"/></span>
+                  <a class="slide__prev" href="#slides__3" title="Prev"></a>
+                  <a class="slide__next" href="#slides__1" title="Prev"></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        <!-- <div class="artists-headliners">
             <img class="dua" src="./assets/img/shfdualipa.jpg">
             <img class="jb" src="./assets/img/shfjbalvin.jpg">
             <img class="diplo" src="./assets/img/shfdiplo.jpg">
             <img class="skepta" src="./assets/img/shfskepta.jpg">
-        </div>
+        </div> -->
 
     </section>
 
@@ -112,21 +141,23 @@
     </section>
 
 
-    <div class="partners-sponsors-stripe"><h2>PARTNERS & SPONSORS</h2></div>
+    <div class="partners-sponsors-stripe">
+        <h2>PARTNERS & SPONSORS</h2>
+    </div>
     <section class="partners-sponsors">
-        <img class="2" src="./assets/img/logos/comodita.png">
-        <img class="3" src="./assets/img/logos/klankosova.png">
-        <img class="4" src="./assets/img/logos/toyota.png">
-        <img class="5" src="./assets/img/logos/ksrpb.png">
-        <img class="6" src="./assets/img/logos/onlinetaxi.png">
-        <img class="7" src="./assets/img/logos/toyota.png">
-        <img class="8" src="./assets/img/logos/prince.png">
-        <img class="9" src="./assets/img/logos/prishtina.png">
-        <img class="10" src="./assets/img/logos/procredit.png">
-        <img class="11" src="./assets/img/logos/birrapeja.png">
+        <div><img class="2" src="./assets/img/logos/comodita.png"></div>
+        <div><img class="3" src="./assets/img/logos/klankosova.png"></div>
+        <div><img class="4" src="./assets/img/logos/toyota.png"></div>
+        <div><img class="5" src="./assets/img/logos/ksrpb.png"></div>
+        <div><img class="6" src="./assets/img/logos/onlinetaxi.png"></div>
+        <div><img class="7" src="./assets/img/logos/toyota.png"></div>
+        <div><img class="8" src="./assets/img/logos/prince.png"></div>
+        <div><img class="9" src="./assets/img/logos/prishtina.png"></div>
+        <div><img class="10" src="./assets/img/logos/procredit.png"></div>
+        <div><img class="11" src="./assets/img/logos/birrapeja.png"></div>
     </section>
 
-   
+
     <div class="newsletter-stripe">
         <h2>NEWSLETTER</h2>
     </div>
@@ -138,14 +169,16 @@
         </form>
     </section>
 
-    <div><hr class="orange"> </div> 
+    <div>
+        <hr class="orange">
+    </div>
 
     <footer>
         <div class="main-footer">
             <div class="footer-left">
                 <a href="#">VOLUNTEER</a>
-                <a href="#">VOLUNTEER</a>
-                <a href="#">VOLUNTEER</a>
+                <a href="#">privacy policy</a>
+                <a href="#">terms of use</a>
             </div>
 
             <div class="footer-right">
@@ -163,7 +196,7 @@
 
             <h3 class="left">
                 <span>© ALL RIGHTS RESERVED</span>
-                CRAFTED BY <a href="#">Republika.tv</a>
+                <span class="crafted">CRAFTED BY <a href="#">Republika.tv</a></span>
             </h3>
 
             <h3 class="right">

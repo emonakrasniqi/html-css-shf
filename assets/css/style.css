@@ -31,22 +31,22 @@
 
 }
 
-.ticket-sale button:hover{
+.ticket-sale button:hover {
     background-color: var(--orange);
     color: white;
     animation-direction: reverse;
 }
 
-.festicket-stripe button:hover{
+.festicket-stripe button:hover {
     cursor: pointer;
 }
 
-.artists button:hover{
+.artists button:hover {
     background-color: var(--black);
     color: white;
 }
 
-.newsletter button:hover{
+.newsletter button:hover {
     cursor: pointer;
 }
 
@@ -59,22 +59,25 @@
         position: fixed;
         background-color: white;
     }
-    header nav{
+
+    header nav {
         display: none;
     }
 
-    header i{
+    header i {
         float: right;
         margin: 15px 15px 15px 0;
     }
+
     /* header i.fa-solid.fa-bars {
         width: 40px;
     } */
     header i:hover {
         color: #ff5e18;
     }
+
     .main-poster img {
-        
+
         width: 100%;
     }
 
@@ -109,6 +112,7 @@
         align-items: center;
         border: #414042;
     }
+
     section.ticket-sale button {
         width: 150px;
         height: 40px;
@@ -127,7 +131,7 @@
         gap: 20px;
         align-items: center;
         justify-content: center;
-        width:100%;
+        width: 100%;
         height: 50%;
         border-bottom: 1px solid #ddd;
         text-align: center;
@@ -156,7 +160,7 @@
         gap: 20px;
         align-items: center;
         justify-content: center;
-        width:100%;
+        width: 100%;
         height: 50%;
         border-bottom: 1px solid #ddd;
         text-align: center;
@@ -182,22 +186,21 @@
         justify-content: center;
         align-items: center;
         padding: 60px;
-       
+
     }
 
     section.festicket-stripe img {
         width: 200px;
-       
+
     }
 
-    .fst-title {
-      
-    }
-    .button{
+    .fst-title {}
+
+    .button {
         display: flex;
         justify-content: center;
         align-items: center;
-    }   
+    }
 
     section.festicket-stripe h1 {
         font-size: 18px;
@@ -206,7 +209,7 @@
         text-align: center;
     }
 
-    div.button button{
+    div.button button {
         width: 150px;
         height: 40px;
         border-radius: 4px;
@@ -249,13 +252,20 @@
 
     div.artists-headliners {
         width: 100%;
+        display: flex;
+        flex-direction: row;
+        overflow-x: scroll;
+    }
+
+    /* div.artists-headliners {
+        width: 100%;
         display: grid;
         grid-template-rows: 1fr 1fr 1fr;
         grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
         gap: 0px;
         height: 390px;
-        background: rgb(109,2,199);
-        background: linear-gradient(356deg, rgba(109,2,199,1) 0%, rgba(255,94,24,1) 72%);
+        background: rgb(109, 2, 199);
+        background: linear-gradient(356deg, rgba(109, 2, 199, 1) 0%, rgba(255, 94, 24, 1) 72%);
     }
 
     .dua {
@@ -272,12 +282,12 @@
 
     .diplo {
         grid-area: 2 / 2 / 3 / 3;
-    }
+    } */
 
     div.artists-headliners img {
-        width:195px;
-        padding: 10px;
-    } 
+        width: 195px;
+        /* padding: 10px; */
+    }
 
     div.news-stripe {
         height: 70px;
@@ -292,25 +302,27 @@
         flex-direction: column;
         width: 100%;
         background-color: var(--purple);
-        height:fit-content;
+        height: fit-content;
     }
 
-    .nyt-text{
+    .nyt-text {
         display: flex;
         flex-direction: column;
         justify-content: space-between;
         margin-top: 30px;
     }
-    .nyt-text a{
+
+    .nyt-text a {
         text-decoration: none;
         color: black;
         font-size: 16px;
         margin-top: 90px;
     }
 
-    div.duki img{
+    div.duki img {
         width: 100%;
     }
+
     div.nyt-text {
         width: 100%;
         padding: 30px;
@@ -334,35 +346,67 @@
         padding: 20px;
         background-color: var(--black);
     }
+
     .partners-sponsors {
         display: grid;
         grid-template-columns: repeat(5, 1fr);
         grid-template-rows: repeat(5, 1fr);
         grid-column-gap: 0px;
         grid-row-gap: 0px;
-     }
-        img.2 { grid-area: 1 / 1 / 2 / 2; }
-        img.3 { grid-area: 1 / 2 / 2 / 3; }
-        img.4 { grid-area: 1 / 3 / 2 / 4; }
-        img.5 { grid-area: 1 / 4 / 2 / 5; }
-        img.6 { grid-area: 1 / 5 / 2 / 6; }
-        img.7 { grid-area: 2 / 1 / 3 / 2; }
-        img.8 { grid-area: 2 / 2 / 3 / 3; }
-        img.9 { grid-area: 2 / 3 / 3 / 4; }
-        img.10 { grid-area: 2 / 4 / 3 / 5; }
-        img.11 { grid-area: 2 / 5 / 3 / 6; }
+    }
 
-        section.partners-sponsors img {
-            width: 70px;
-            vertical-align: middle;
-            object-fit: contain;
-        }
-        .partners-sponsors div{
-            display: flex;
-            justify-content: center;
-            align-content: center;
-        }
-    
+    img.2 {
+        grid-area: 1 / 1 / 2 / 2;
+    }
+
+    img.3 {
+        grid-area: 1 / 2 / 2 / 3;
+    }
+
+    img.4 {
+        grid-area: 1 / 3 / 2 / 4;
+    }
+
+    img.5 {
+        grid-area: 1 / 4 / 2 / 5;
+    }
+
+    img.6 {
+        grid-area: 1 / 5 / 2 / 6;
+    }
+
+    img.7 {
+        grid-area: 2 / 1 / 3 / 2;
+    }
+
+    img.8 {
+        grid-area: 2 / 2 / 3 / 3;
+    }
+
+    img.9 {
+        grid-area: 2 / 3 / 3 / 4;
+    }
+
+    img.10 {
+        grid-area: 2 / 4 / 3 / 5;
+    }
+
+    img.11 {
+        grid-area: 2 / 5 / 3 / 6;
+    }
+
+    section.partners-sponsors img {
+        width: 70px;
+        vertical-align: middle;
+        object-fit: contain;
+    }
+
+    .partners-sponsors div {
+        display: flex;
+        justify-content: center;
+        align-content: center;
+    }
+
     div.newsletter-stripe {
         /* position: absolute; */
         width: 100%;
@@ -372,13 +416,14 @@
         line-height: 70px;
         font-size: 12px;
     }
+
     section.newsletter {
         width: 100%;
         /* height: 70px; */
         display: flex;
         justify-content: center;
         align-items: center;
-        
+
     }
 
     form {
@@ -407,11 +452,11 @@
 
 
     .orange {
-       
+
         height: 8px;
         width: 100%;
         background-color: var(--orange);
-    } 
+    }
 
 
     footer {
@@ -442,7 +487,7 @@
     .footer-left a {
         text-decoration: none !important;
         color: white;
-        
+
     }
 
     .footer-left a:hover {
@@ -479,6 +524,7 @@
         text-decoration: none;
         color: var(--white);
     }
+
     h3.left {
         display: flex;
         flex-direction: column;
@@ -487,10 +533,12 @@
     h3.left span {
         margin-right: 30px;
     }
+
     h3.left span.crafted {
         margin-bottom: 20px;
     }
 }
+
 /* medium devices min640 */
 @media (min-width: 640px) {
     header {
@@ -500,40 +548,41 @@
         position: fixed;
         background-color: white;
     }
-    header nav{
+
+    header nav {
         display: none;
     }
 
-    header i{
+    header i {
         float: right;
         margin: 15px 15px 15px 0;
     }
-    
+
     header a:hover {
         color: #ff5e18;
     }
-    
+
     .main-poster {
         z-index: 999999999999;
     }
-    
+
     .main-poster img {
         width: 100%;
     }
-    
-    
+
+
     marquee {
         background-color: var(--orange);
         height: 70px;
         display: inline-block;
         margin: -3px 0;
     }
-    
+
     marquee span {
         line-height: 70px;
         display: inline-block;
     }
-    
+
     div.ticket-stripe {
         height: 70px;
         background-color: var(--white);
@@ -541,9 +590,9 @@
         line-height: 70px;
         font-size: 18px;
     }
-    
+
     /* tirana prishtina sales */
-    
+
     section.ticket-sale {
         padding: 40px;
         width: 100%;
@@ -553,7 +602,7 @@
         align-items: center;
         border: #414042;
     }
-    
+
     div.shf-prishtina {
         display: flex;
         flex-direction: column;
@@ -565,14 +614,14 @@
         border-right: 1px solid #ddd;
         text-align: center;
     }
-    
+
     div.shf-prishtina h1,
     div.shf-tirana h1 {
         color: var(--orange);
         font-size: 32px;
         text-align: center;
     }
-    
+
     div.shf-prishtina h3,
     div.shf-tirana h3 {
         color: #414042;
@@ -580,7 +629,7 @@
         display: flex;
         justify-content: center;
     }
-    
+
     div.shf-tirana {
         display: flex;
         flex-direction: column;
@@ -591,7 +640,7 @@
         height: 100%;
         text-align: center;
     }
-    
+
     section.ticket-sale button {
         width: 150px;
         height: 40px;
@@ -602,6 +651,7 @@
         border-radius: 4px;
         border-bottom: 5px solid var(--orange);
     }
+
     div.international-ticket-stripe {
         height: 70px;
         background-color: var(--white);
@@ -609,7 +659,7 @@
         line-height: 70px;
         font-size: 18px;
     }
-    
+
     section.festicket-stripe {
         width: 100%;
         height: 250px;
@@ -621,19 +671,17 @@
         justify-content: center;
         align-items: center;
         padding: 60px;
-       
+
     }
 
     section.festicket-stripe img {
         width: 200px;
-       
+
     }
 
-    .fst-title {
-      
-    }
-    
-    .button{
+    .fst-title {}
+
+    .button {
         display: flex;
         justify-content: center;
         align-items: center;
@@ -646,13 +694,13 @@
         text-align: center;
     }
 
-    div.button button{
+    div.button button {
         width: 150px;
         height: 40px;
         border-radius: 4px;
         border: none;
     }
-    
+
     div.headliners-stripe {
         height: 70px;
         background-color: var(--white);
@@ -660,14 +708,14 @@
         line-height: 70px;
         font-size: 18px;
     }
-    
+
     section.artists {
         width: 100%;
-        height: 500px;
+        /* height: 500px; */
         display: flex;
         flex-direction: column;
     }
-    
+
     div.header {
         height: 500px;
         display: flex;
@@ -676,10 +724,11 @@
         align-items: center;
         background-color: var(--orange);
     }
-    
+
     button.lineup {
         margin-top: 50px;
     }
+
     button.lineup {
         margin-top: 50px;
         width: 200px;
@@ -688,6 +737,14 @@
         border: 1px solid black;
         border-radius: 4px;
     }
+
+    div.artists-headliners {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        overflow-x: scroll;
+    }
+
     /* div.artists-headliners {
         display: grid;
         grid-template-columns: repeat(5, 1fr);
@@ -698,7 +755,7 @@
         background: linear-gradient(267deg, rgba(109, 2, 199, 1) 0%, rgba(255, 94, 24, 1) 72%);
         height: 500px;
     } */
-    
+
     /* .dua {
         grid-area: 1 / 1 / 2 / 2;
     }
@@ -715,12 +772,11 @@
         grid-area: 2 / 2 / 3 / 3;
     }
      */
-    /* div.artists-headliners img {
-        width: 255px;
-        padding: 10px;
-    } */
-    
-    
+    div.artists-headliners img {
+        width: 100%;
+    }
+
+
     div.news-stripe {
         height: 70px;
         background-color: var(--white);
@@ -728,7 +784,7 @@
         line-height: 70px;
         font-size: 18px;
     }
-    
+
     section.nyt-news {
         display: flex;
         flex-direction: column;
@@ -737,22 +793,24 @@
         height: fit-content;
     }
 
-    .nyt-text{
+    .nyt-text {
         display: flex;
         flex-direction: column;
         justify-content: space-between;
         margin-top: 30px;
     }
-    .nyt-text a{
+
+    .nyt-text a {
         text-decoration: none;
         color: black;
         font-size: 16px;
         margin-top: 90px;
     }
 
-    div.duki img{
+    div.duki img {
         width: 100%;
     }
+
     div.nyt-text {
         width: 100%;
         padding: 30px;
@@ -776,35 +834,67 @@
         padding: 20px;
         background-color: var(--black);
     }
+
     .partners-sponsors {
         display: grid;
         grid-template-columns: repeat(5, 1fr);
         grid-template-rows: repeat(5, 1fr);
         grid-column-gap: 0px;
         grid-row-gap: 0px;
-     }
-        img.2 { grid-area: 1 / 1 / 2 / 2; }
-        img.3 { grid-area: 1 / 2 / 2 / 3; }
-        img.4 { grid-area: 1 / 3 / 2 / 4; }
-        img.5 { grid-area: 1 / 4 / 2 / 5; }
-        img.6 { grid-area: 1 / 5 / 2 / 6; }
-        img.7 { grid-area: 2 / 1 / 3 / 2; }
-        img.8 { grid-area: 2 / 2 / 3 / 3; }
-        img.9 { grid-area: 2 / 3 / 3 / 4; }
-        img.10 { grid-area: 2 / 4 / 3 / 5; }
-        img.11 { grid-area: 2 / 5 / 3 / 6; }
+    }
+
+    img.2 {
+        grid-area: 1 / 1 / 2 / 2;
+    }
+
+    img.3 {
+        grid-area: 1 / 2 / 2 / 3;
+    }
+
+    img.4 {
+        grid-area: 1 / 3 / 2 / 4;
+    }
+
+    img.5 {
+        grid-area: 1 / 4 / 2 / 5;
+    }
+
+    img.6 {
+        grid-area: 1 / 5 / 2 / 6;
+    }
+
+    img.7 {
+        grid-area: 2 / 1 / 3 / 2;
+    }
+
+    img.8 {
+        grid-area: 2 / 2 / 3 / 3;
+    }
+
+    img.9 {
+        grid-area: 2 / 3 / 3 / 4;
+    }
+
+    img.10 {
+        grid-area: 2 / 4 / 3 / 5;
+    }
+
+    img.11 {
+        grid-area: 2 / 5 / 3 / 6;
+    }
 
     section.partners-sponsors img {
         width: 70px;
         vertical-align: middle;
         object-fit: contain;
     }
-    .partners-sponsors div{
+
+    .partners-sponsors div {
         display: flex;
         justify-content: center;
         align-content: center;
     }
-    
+
     div.newsletter-stripe {
         height: 70px;
         background-color: var(--white);
@@ -812,7 +902,7 @@
         line-height: 70px;
         font-size: 18px;
     }
-    
+
     section.newsletter {
         width: 100%;
         height: 70px;
@@ -820,14 +910,14 @@
         justify-content: center;
         align-items: center;
     }
-    
+
     form {
         display: flex;
         justify-content: space-between;
         width: 100%;
-    
+
     }
-    
+
     input.email {
         width: 100%;
         height: 70px;
@@ -835,7 +925,7 @@
         border: none;
         text-indent: 20px;
     }
-    
+
     button.subscribe {
         width: 100%;
         height: 70px;
@@ -843,13 +933,13 @@
         background-color: var(--purple);
         border: none;
     }
-    
+
     hr.orange {
         height: 10px;
         background-color: var(--orange);
         margin: -2px;
     }
-    
+
     footer {
         width: 100%;
         height: 220px;
@@ -859,12 +949,12 @@
         justify-content: space-between;
         color: white;
     }
-    
+
     .main-footer {
         display: flex;
         justify-content: space-between;
     }
-    
+
     .footer-left {
         width: 100%;
         display: flex;
@@ -872,16 +962,16 @@
         padding: 20px;
         line-height: 30px;
     }
-    
+
     .footer-left a {
         text-decoration: none !important;
         color: white;
     }
-    
+
     .footer-left a:hover {
         color: var(--orange);
     }
-    
+
     .footer-right {
         width: 100%;
         display: flex;
@@ -891,12 +981,12 @@
         line-height: 30px;
         text-align: right;
     }
-    
+
     .footer-right h2 {
         display: flex;
         flex-direction: column;
     }
-    
+
     .footer-stripe {
         width: 100%;
         height: 70px;
@@ -907,12 +997,12 @@
         padding: 20px;
         font-size: 12px;
     }
-    
+
     .footer-stripe a {
         text-decoration: none;
         color: var(--white);
     }
-    
+
     h3.left span {
         margin-right: 30px;
     }
@@ -920,8 +1010,8 @@
 
 /* large devices min1120 */
 @media (min-width: 1120px) {
-    
-    
+
+
     header {
         display: flex;
         justify-content: center;
@@ -934,49 +1024,51 @@
         transition: all .3s ease-in-out;
         background-color: white;
     }
+
     header i {
         display: none;
     }
-    
+
     .mobile-menu {
         display: none;
     }
-    header nav{
+
+    header nav {
         display: unset;
     }
-    
+
     header a {
         text-decoration: none;
         color: #1d1d21;
         padding: 20px;
         letter-spacing: 1px;
     }
-    
+
     header a:hover {
         color: #ff5e18;
     }
-    
+
     .main-poster {
         z-index: 999999999999;
     }
-    
+
     .main-poster img {
         width: 100%;
     }
-    
-    
+
+
     marquee {
         background-color: var(--orange);
         height: 70px;
         display: inline-block;
         margin: -3px 0;
     }
-    
+
     marquee span {
         line-height: 70px;
         display: inline-block;
     }
-    
+
     div.ticket-stripe {
         height: 70px;
         background-color: var(--white);
@@ -984,9 +1076,9 @@
         line-height: 70px;
         font-size: 18px;
     }
-    
+
     /* tirana prishtina sales */
-    
+
     section.ticket-sale {
         padding: 40px;
         width: 100%;
@@ -996,7 +1088,7 @@
         align-items: center;
         border: #414042;
     }
-    
+
     div.shf-prishtina {
         display: flex;
         flex-direction: column;
@@ -1008,14 +1100,14 @@
         border-right: 1px solid #ddd;
         text-align: center;
     }
-    
+
     div.shf-prishtina h1,
     div.shf-tirana h1 {
         color: var(--orange);
         font-size: 32px;
         text-align: center;
     }
-    
+
     div.shf-prishtina h3,
     div.shf-tirana h3 {
         color: #414042;
@@ -1023,7 +1115,7 @@
         display: flex;
         justify-content: center;
     }
-    
+
     div.shf-tirana {
         display: flex;
         flex-direction: column;
@@ -1034,7 +1126,7 @@
         height: 100%;
         text-align: center;
     }
-    
+
     section.ticket-sale button {
         width: 150px;
         height: 40px;
@@ -1045,6 +1137,7 @@
         border-radius: 4px;
         border-bottom: 5px solid var(--orange);
     }
+
     div.international-ticket-stripe {
         height: 70px;
         background-color: var(--white);
@@ -1052,7 +1145,7 @@
         line-height: 70px;
         font-size: 18px;
     }
-    
+
     section.festicket-stripe {
         width: 100%;
         height: 160px;
@@ -1064,35 +1157,36 @@
         flex-direction: row;
         justify-content: space-around;
     }
-    
+
     section.festicket-stripe img {
         width: 240px;
     }
-    
+
     .fst-title {
         display: flex;
         justify-content: space-between;
     }
-    .button{
+
+    .button {
         display: flex;
         justify-content: center;
         align-items: center;
     }
-    
+
     section.festicket-stripe h1 {
         font-size: 18px;
         width: 60%;
         display: flex;
         align-items: center;
     }
-    
+
     .button button {
         width: 150px;
         height: 40px;
         border-radius: 4px;
         border: none;
     }
-    
+
     div.headliners-stripe {
         height: 70px;
         background-color: var(--white);
@@ -1100,15 +1194,15 @@
         line-height: 70px;
         font-size: 18px;
     }
-    
+
     section.artists {
         width: 100%;
         height: 500px;
         display: flex;
         flex-direction: row;
-        
+
     }
-    
+
     div.header {
         height: 500px;
         width: 100%;
@@ -1118,23 +1212,22 @@
         align-items: center;
         background-color: var(--orange);
     }
-    
-    div.slider-container{
+
+    div.slider-container {
         width: 100%;
     }
+
     .slider-container {
-        background: linear-gradient(
-          149deg,
-          rgb(247, 0, 255) 0%,
-          rgb(255, 145, 0) 100%
-        );
+        background: linear-gradient(149deg,
+                rgb(247, 0, 255) 0%,
+                rgb(255, 145, 0) 100%);
         display: flex;
         align-items: center;
         justify-content: center;
         height: 100%;
-      }
-      
-      .slider {
+    }
+
+    .slider {
         width: 100%;
         max-width: 600px;
         height: 400px;
@@ -1143,21 +1236,21 @@
         border-radius: 20px;
         overflow: hidden;
         position: relative;
-      }
-      
-      .slides {
+    }
+
+    .slides {
         display: flex;
         overflow-x: scroll;
         position: relative;
         scroll-behavior: smooth;
         scroll-snap-type: x mandatory;
-      }
-      
-      .slide:nth-of-type(even) {
+    }
+
+    .slide:nth-of-type(even) {
         background-color: rgb(250, 246, 212);
-      }
-      
-      .slide {
+    }
+
+    .slide {
         display: flex;
         justify-content: center;
         align-items: center;
@@ -1170,37 +1263,37 @@
         background: white;
         transform-origin: center center;
         transform: scale(1);
-      }
-      
-      .slide__text {
+    }
+
+    .slide__text {
         font-size: 40px;
         font-weight: bold;
         font-family: sans-serif;
-      }
-      
-      .slide a {
+    }
+
+    .slide a {
         background: none;
         border: none;
-      }
-      
-      a.slide__prev,
-      .slider::before {
+    }
+
+    a.slide__prev,
+    .slider::before {
         transform: rotate(135deg);
         -webkit-transform: rotate(135deg);
         left: 5%;
-      }
-      
-      a.slide__next,
-      .slider::after {
+    }
+
+    a.slide__next,
+    .slider::after {
         transform: rotate(-45deg);
         -webkit-transform: rotate(-45deg);
         right: 5%;
-      }
-      
-      .slider::before,
-      .slider::after,
-      .slide__prev,
-      .slide__next {
+    }
+
+    .slider::before,
+    .slider::after,
+    .slide__prev,
+    .slide__next {
         position: absolute;
         top: 48%;
         width: 35px;
@@ -1209,18 +1302,20 @@
         border-width: 0 4px 4px 0;
         padding: 3px;
         box-sizing: border-box;
-      }
-      
-      .slider::before,
-      .slider::after {
+    }
+
+    .slider::before,
+    .slider::after {
         content: "";
         z-index: 1;
         background: none;
         pointer-events: none;
-      }
+    }
+
     button.lineup {
         margin-top: 50px;
     }
+
     button.lineup {
         margin-top: 50px;
         width: 200px;
@@ -1229,6 +1324,15 @@
         border: 1px solid black;
         border-radius: 4px;
     }
+
+    div.artists-headliners {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        overflow-x: scroll;
+    }
+
+
     /* div.artists-headliners {
         display: grid;
         grid-template-columns: repeat(5, 1fr);
@@ -1260,8 +1364,8 @@
         width: 255px;
         padding: 10px;
     } */
-    
-    
+
+
     div.news-stripe {
         height: 70px;
         background-color: var(--white);
@@ -1269,47 +1373,47 @@
         line-height: 70px;
         font-size: 18px;
     }
-    
+
     section.nyt-news {
         display: grid;
         grid-template-columns: repeat(5, 1fr);
         width: 100%;
         background-color: var(--purple);
         height: fit-content;
-    
+
     }
-    
+
     div.duki {
         grid-area: 1 / 1 / 2 / 2;
     }
-    
+
     div.nyt-text {
         grid-area: 1 / 2 / 2 / 3;
     }
-    
+
     div.duaduki {
         grid-area: 1 / 3 / 2 / 4;
     }
-    
+
     div.duki img {
         width: 660px;
     }
-    
+
     div.nyt-text {
         width: 303px;
         padding: 30px;
     }
-    
+
     div.nyt-text p {
         line-height: 1.6;
         margin-top: 20px;
     }
-    
+
     div.duaduki img {
         width: 303px;
     }
-    
-    
+
+
     div.partners-sponsors-stripe {
         height: 70px;
         background-color: var(--white);
@@ -1318,7 +1422,7 @@
         font-size: 18px;
         font-weight: bold;
     }
-    
+
     section.partners-sponsors {
         height: 150px;
         background-color: var(--black);
@@ -1327,7 +1431,7 @@
         justify-content: space-between;
         padding: 20px;
     }
-    
+
     section.partners-sponsors img {
         display: flex;
         flex-direction: column;
@@ -1336,7 +1440,7 @@
         vertical-align: middle;
         object-fit: contain;
     }
-    
+
     div.newsletter-stripe {
         height: 70px;
         background-color: var(--white);
@@ -1344,7 +1448,7 @@
         line-height: 70px;
         font-size: 18px;
     }
-    
+
     section.newsletter {
         width: 100%;
         height: 70px;
@@ -1352,14 +1456,14 @@
         justify-content: center;
         align-items: center;
     }
-    
+
     form {
         display: flex;
         justify-content: space-between;
         width: 100%;
-    
+
     }
-    
+
     input.email {
         width: 100%;
         height: 70px;
@@ -1367,7 +1471,7 @@
         border: none;
         text-indent: 20px;
     }
-    
+
     button.subscribe {
         width: 100%;
         height: 70px;
@@ -1375,14 +1479,14 @@
         background-color: var(--purple);
         border: none;
     }
-    
+
     hr.orange {
         width: 100%;
         height: 12px;
         background-color: var(--orange);
         margin: -2px 0;
     }
-    
+
     footer {
         width: 100%;
         height: 200px;
@@ -1392,12 +1496,12 @@
         justify-content: space-between;
         color: white;
     }
-    
+
     .main-footer {
         display: flex;
         justify-content: space-between;
     }
-    
+
     .footer-left {
         width: 100%;
         display: flex;
@@ -1405,16 +1509,16 @@
         padding: 20px;
         line-height: 30px;
     }
-    
+
     .footer-left a {
         text-decoration: none !important;
         color: white;
     }
-    
+
     .footer-left a:hover {
         color: var(--orange);
     }
-    
+
     .footer-right {
         width: 100%;
         display: flex;
@@ -1424,12 +1528,12 @@
         line-height: 30px;
         text-align: right;
     }
-    
+
     .footer-right h2 {
         display: flex;
         flex-direction: column;
     }
-    
+
     .footer-stripe {
         width: 100%;
         height: 70px;
@@ -1440,14 +1544,13 @@
         padding: 20px;
         font-size: 12px;
     }
-    
+
     .footer-stripe a {
         text-decoration: none;
         color: var(--white);
     }
-    
+
     h3.left span {
         margin-right: 30px;
     }
 }
-    

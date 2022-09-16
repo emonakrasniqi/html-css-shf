@@ -1,5 +1,4 @@
 :root {
-
     --orange: #ff5e18;
     --white: #e6e7e8;
     --purple: #6d02c7;
@@ -18,7 +17,6 @@
 
 }
 
-/* assets/css/fonts/ppsupplysans-regular-webfont.woff */
 
 * {
     padding: 0px;
@@ -27,8 +25,6 @@
     font-family: 'pp_supply_sansregular';
     text-transform: uppercase;
     letter-spacing: 4px;
-
-
 }
 
 .ticket-sale button:hover {
@@ -93,7 +89,7 @@
         display: inline-block;
         font-weight: bold;
         font-size: 18px;
-        letter-spacing: 0px;
+        letter-spacing: 6px;
     }
 
 
@@ -126,7 +122,6 @@
         background-color: #FCB25A;
         border-radius: 4px;
         border-bottom: 5px solid var(--orange);
-
     }
 
     div.shf-prishtina {
@@ -140,7 +135,6 @@
         border-bottom: 1px solid #ddd;
         text-align: center;
         padding: 60px;
-
     }
 
     div.shf-prishtina h1,
@@ -190,15 +184,11 @@
         justify-content: center;
         align-items: center;
         padding: 60px;
-
     }
 
     section.festicket-stripe img {
         width: 200px;
-
     }
-
-    .fst-title {}
 
     .button {
         display: flex;
@@ -354,9 +344,6 @@
     .partners-sponsors {
         display: grid;
         grid-template-columns: repeat(5, 1fr);
-        grid-template-rows: repeat(5, 1fr);
-        grid-column-gap: 0px;
-        grid-row-gap: 0px;
     }
 
     img.2 {
@@ -566,10 +553,6 @@
         color: #ff5e18;
     }
 
-    .main-poster {
-        z-index: 999999999999;
-    }
-
     .main-poster img {
         width: 100%;
     }
@@ -585,10 +568,9 @@
 
     marquee span {
         line-height: 70px;
-        display: inline-block;
         font-weight: bold;
         font-size: 18px;
-        letter-spacing: 0px;
+        letter-spacing: 6px;
     }
 
     div.ticket-stripe {
@@ -846,9 +828,6 @@
     .partners-sponsors {
         display: grid;
         grid-template-columns: repeat(5, 1fr);
-        grid-template-rows: repeat(5, 1fr);
-        grid-column-gap: 0px;
-        grid-row-gap: 0px;
     }
 
     img.2 {
@@ -1029,8 +1008,8 @@
         width: 100%;
         height: 75px;
         padding: 30px;
-        transition: all .3s ease-in-out;
         background-color: white;
+        z-index: 999999;
     }
 
     header i {
@@ -1065,17 +1044,16 @@
         width: 100%;
         background-color: var(--orange);
         height: 70px;
-        display: inline-block;
         margin: -3px 0;
-        overflow: hidden;
+       
     }
 
     .marquee span {
         line-height: 70px;
-        display: inline-block;
         font-weight: bold;
         font-size: 18px;
-        letter-spacing: 0px;
+        letter-spacing: 6px;
+        position: absolute;
     }
 
     div.ticket-stripe {
